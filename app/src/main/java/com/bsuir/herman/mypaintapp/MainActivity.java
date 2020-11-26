@@ -148,9 +148,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void savePainting() {
         AlertDialog.Builder saveDialog = new AlertDialog.Builder(this);
-        saveDialog.setTitle("Save drawing");
-        saveDialog.setMessage("Save drawing to device Gallery?");
-        saveDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        saveDialog.setTitle("Сохрание");
+        saveDialog.setMessage("Сохранить рисунок на устройстве?");
+        saveDialog.setPositiveButton("Да", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 //save drawing
                 drawView.setDrawingCacheEnabled(true);
@@ -159,10 +159,10 @@ public class MainActivity extends AppCompatActivity {
                         UUID.randomUUID().toString() + ".png", "drawing");
                 if (imgSaved != null) {
                     Toast.makeText(getApplicationContext(),
-                            "Saved.", Toast.LENGTH_SHORT).show();
+                            "Сохранено.", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(),
-                            "Image could not be saved.", Toast.LENGTH_SHORT).show();
+                            "Изображение не сохранено.", Toast.LENGTH_SHORT).show();
 
                 }
                 // Destroy the current cache.
