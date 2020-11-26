@@ -4,4 +4,6 @@
         android:title="Очистить"/>
     <item android:id="@+id/menuItem2"
         android:title="Загрузить фон"/>
+    <item android:id="@+id/menuItem3"
+        android:title="Сохранить"/>
 </menu>
